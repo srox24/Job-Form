@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    border-color: #ccc;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.title-small{
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.apply-box{
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow:4px 3px 5px (1,1,1,0.1);
+    border-radius: 10px;
+}
+.form-container{
+    margin-top: 20px;
+    display: grid;
+    grid-template: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+input,select,textarea{
+    padding:6px 10px ;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+input:focus{
+    outline: red;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.btn{
+    background-color: orangered;
+    color: white;
+    border: 2px solid red;
+    border-radius: 8px;
+    padding: 6px 12px;
+    transition: 0.3s ease-in;
+}
+.btn:hover{
+    background-color: #ccc;
+    border: 2px solid red;
+    color: black;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+@media (max-width: 460px) {
+    .textarea-control {
+      grid-column: 1 / span 1;
+    }
+}
